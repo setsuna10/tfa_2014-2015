@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Accueil | Design Web & Multimédia | Spiessens Julian.</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/png" href="logo.png" />
+		<meta charset="UTF-8" Title="Tfa_Spiessens_Julian" description="Mon travail de fin d'année en Web et Multimedia. Objectif: Site dédié a la recherche d'un stage."/>
+		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
+		<script src="headsupgrid/hugrid.js"></script>
+		<script type="text/javascript">
+		    definegrid = function() {
+		        var browserWidth = $(window).width(); 
+		        if (browserWidth >= 1001) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 20;
+		            columnwidth = 4;
+		            gutterwidth = 1;
+		            pagetopmargin = 0;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        } 
+		        if (browserWidth <= 1000) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 48;
+		            gutterwidth = 4;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		        if (browserWidth <= 768) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 49;
+		            gutterwidth = 2;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		    }
+		    $(document).ready(function() {
+		        definegrid();
+		        setgridonload();
+		    });    
+
+		    $(window).resize(function() {
+		        definegrid();
+		        setgridonresize();
+		    });
+		</script>
+	</head>
+	<body>
+		<nav>	
+			<a href="index.html"><h1>SetsunArts</h1></a>
+			<ul>
+			
+				<li><a href="contact.html"><p>Contact</p></a> </li>
+				<li><a href="about.html"><p>A Propos</p></a></li>			
+				<li><a href="lab.html"><p>Labo</p></a></li>
+				<li><a href="index.html"class="actif"><p>Accueil</p></a></li>
+			</ul>
+		</nav>
+
+		<section class="section_main">
+
+			<svg alt="svg shinto animation" class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1260px"
+				 height="860px" viewBox="0 0 1260 860" enable-background="new 0 0 1260 860" xml:space="preserve">
+				<g alt="calque animé" class="animate">
+					<path  stroke="#FF0000" stroke-miterlimit="10" d="M137.5,788.25L173,613.5h19l88.25-394L119.5,176v-14l7-51
+						l173.25,52l12.125-43L143.938,57l-2.969-17l9.266-30L744.5,237v17l-8,11l-72.75-19l1.625,37l79.125,23v35l-6,4l-71.75-21
+						l15.125,283l8.063,6l5.031,92l10.016,16l14.008,50c0,0-29.996,17-32.996,16.5s-40.998,0.011-40.998,0.011L604.999,782L608,730
+						l10-23.25l2-92.25h10l-6-299l-272-76.25l-71,368.875l11,6.938l-15,132.969l11,23.984l5,60.992l-73.889,26.996l-98.611-8.183
+						L137.5,788.25z"/>
+				</g>
+			</svg>
+			<div class="content">
+				<h2>Je suis...</h2>
+				<h3>...un rêveur, vivant sur la frontière entre virtuel et réel.</h3>
+				<h3>Je rêve d'un stage en web.</h3>
+				<p>Julian Spiessens</p>
+				<h3>"Au lieu de rêver ta vie, vis ton rêve!"</h3>
+				<p>Extrait du Petit livre du bonheur</p>
+			</div>
+		</section>
+		
+		<section class="footer">
+				<ul class="foot">
+					<li class="twit"><a href="https://twitter.com/setsunArts"></a></li>
+					<li class="link"><a href="https://www.linkedin.com/profile/view?id=427788678&trk=hp-identity-name"></a></li>
+					<li class="medium"><a href="https://medium.com/@julianspiessens/tfa-2014-2015-c8ce5fad2b5"></a></li>
+					<li class="gh"><a href="#"></a></li>
+				</ul>
+
+		</section>
+	
+	</body>
+</html>

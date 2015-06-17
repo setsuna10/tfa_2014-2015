@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical stripes</title>
+
+    <style type="text/css">
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden; 
+            background: #C4C4C4; 
+        }
+
+        #container { width: 560px; margin: 0 auto;}
+
+        #header {
+            color: #F5F5F5;
+            padding: 40px 0 0 0;
+        }
+        #header h1 {
+            text-align: center;
+            font-size: 3em;
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+        }
+        #loadScreen {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 99;
+            display: none;
+        }
+        .slice {
+            width: 20%;
+            height: 0%;
+            position: absolute;
+            bottom: 0;
+            background: blue;
+            overflow: hidden;
+        }
+        .slice img{
+            position: absolute;
+            top: 40%;
+        }   
+
+        #button {
+            display: block;
+            padding: 10px;
+            width: 200px;
+            background: #EE0030;
+            text-align: center;
+            margin: 40px auto;
+            text-transform: capitalize;
+            color: #FFF;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 0 5px #727272;
+        }
+
+    </style>
+  
+</head>
+
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<body>
+
+    <div id="loadScreen">
+        <div class="slice"><img src="Metal_Gear_Solid-Rising.png"/></div>
+        <div class="slice"><img src="Metal_Gear_Solid-Rising.png"/></div>
+        <div class="slice"><img src="Metal_Gear_Solid-Rising.png"/></div>
+        <div class="slice"><img src="Metal_Gear_Solid-Rising.png"/></div>
+        <div class="slice"><img src="Metal_Gear_Solid-Rising.png"/></div>
+    </div>
+
+    <div id="container">
+        <header id="header">
+            <h1>Responisve Vertical Stripes Transition</h1>
+        </header>
+
+        <div id="button" class="btn">launch</div>
+       
+    </div>
+
+    <script>
+        $(function(){
+
+            var $button = $("#button");
+
+            var $loadScreen = $("#loadScreen"),
+                $slices = $(".slice"),
+                //settings
+                slicesCount = $slices.length-1,
+                slicesAnimationLength = 400,
+                slicesAnimationWait = 500,
+                slicesAnimationLengthOffset = 200,
+                colors = ["#100A04","#5E3112","#BA4D13","#F3B555","#FBDE9C"];
+
+            //set positions
+            (function setSlicePosition(){
+                $slices.each(function(i, val){
+                    //set offset
+                    $(this).css("left", i * 20+"%");
+                    //regler manuellement pour centrer le logo horizontalement le centrage vertical se fait dans le css
+                    $(this).find("img").css({
+                        "width":"200%",
+                        "left" : i * -100+150+"%"
+                    });
+                });
+            })();
+
+            //show stripes
+            function showStripes(){
+                //get a random color in the array
+                var colorCycle = colors[Math.floor(Math.random() * colors.length)];
+                //show stripes container
+                $loadScreen.show();
+                //animate each stripes
+                $slices.each(function(i, val){
+                    $(this)
+                        .css("background-color", colorCycle)
+                        .delay( i * slicesAnimationLengthOffset )
+                        .animate({ height : "100%"}, slicesAnimationLength, function(){
+                            //hide stripes container
+                            if(i == slicesCount){
+                                setTimeout(hideStripes, slicesAnimationWait);
+                            }
+                        });
+                });
+            }
+
+            function hideStripes(){
+                //animate each stripes
+                $slices.each(function(i, val){
+                    $(this)
+                        .delay( i * slicesAnimationLengthOffset )
+                        .animate({ height : "0%"}, slicesAnimationLength, function(){
+                            //hide stripes container
+                            if(i == slicesCount){
+                                $loadScreen.hide();
+                            }
+                        });
+                });
+            }
+
+            $button.click(showStripes);
+        });
+    </script>
+
+</body>
+</html>

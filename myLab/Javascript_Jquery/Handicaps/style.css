@@ -1,0 +1,69 @@
+h1 {
+	margin-bottom: 5px;
+}
+
+
+#poetry {
+	display: block;
+
+	padding-top:15%;
+	margin-bottom: 20%;
+	text-align: center;
+
+}
+.elegant {
+
+	color:#CC6114;
+	background:url(dashed.jpg);
+
+}
+
+#btn_zoom {
+	display: block;
+	height: 50px;
+	width: 100px;
+	background-color: red;
+	border-radius: 25px;
+	text-align: center;
+	position: fixed;
+
+}
+#btn_retour {
+
+	height: 50px;
+	width: 100px;
+	background-color: blue;
+	border-radius: 25px;
+	text-align: center;
+	position: fixed;
+	left: 200px;
+}
+#btn_elegant {
+	display: block;
+	height: 50px;
+	width: 100px;
+	background-color: green;
+	border-radius: 25px;
+	text-align: center;
+	position: fixed;
+	left: 100px;
+}	
+.display {
+	display:block;
+}
+
+.Zoom {
+	font:normal 20px/30px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif;
+}
+
+.ZoomX2 {
+	font:normal 35px/70px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif
+}
+
+.ZoomX3 {
+	font:normal 50px/90px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif
+}
+
+.ZoomX4 {
+	font:normal 65px/120px "Lucida Grande","Lucida Sans","Lucida Sans Unicode",Lucida,Arial,Helvetica,sans-serif
+}

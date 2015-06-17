@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Contact  | Design Web & Multimédia | Spiessens Julian.</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<meta charset="UTF-8" Title="Tfa_Spiessens_Julian" description="Mon travail de fin d'année en Web et Multimedia. Objectif: Site dédié a la recherche d'un stage."/>
+		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
+		<script src="headsupgrid/hugrid.js"></script>
+		<script type="text/javascript">
+		    definegrid = function() {
+		        var browserWidth = $(window).width(); 
+		        if (browserWidth >= 1001) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 20;
+		            columnwidth = 4;
+		            gutterwidth = 1;
+		            pagetopmargin = 0;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        } 
+		        if (browserWidth <= 1000) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 48;
+		            gutterwidth = 4;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		        if (browserWidth <= 768) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 49;
+		            gutterwidth = 2;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		    }
+		    $(document).ready(function() {
+		        definegrid();
+		        setgridonload();
+		    });    
+
+		    $(window).resize(function() {
+		        definegrid();
+		        setgridonresize();
+		    });
+		</script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html"><h1>SetsunArts</h1></a>
+			<ul>
+				
+				<li><a href="contact.html" class="actif"><p>Contact</p></a> </li>
+				<li><a href="about.html"><p>A Propos</p></a></li>			
+				<li><a href="lab.html"><p>Labo</p></a></li>
+				<li><a href="index.html"><p>Accueil</p></a></li>
+			</ul>
+		</nav>
+
+		<section class="section_contact">
+
+			<div class="formulaire">
+				<div class="title">	
+					<h1> Contactez-moi </h1>
+					<h2> Si mon travail vous plais, n'hésiter surtout pas.</h3>
+				</div>
+				<div id="form-main">
+
+					<div id="form-div">
+					    <form  action="sendemail.php" class="form" id="form1" method="post">
+					      
+					    	<label for="name" class="tags"> <p>Qui êtes vous?</p> </label>
+					        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"  id="name"/>
+					      
+					    	<label for="e-mail" class="tags"><p>votre e-mail.</p> </label>
+					        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email"/>
+					      
+					    	<label for="message" class="tags"><p>Votre message.</p></label>
+					        <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="message"></textarea>				      
+					      
+						    <div class="submit">
+						        <input type="submit" value="Submit" id="button"/>
+						        <div class="ease"></div>
+						    </div>
+					    </form>
+					</div>
+				</div>
+			</div>
+
+			<div class="sociaux">
+				<ul>
+					<li alt="image svg twitter" class="twiter">
+						<a href="https://twitter.com/setsunArts">
+							<h2>Twitter</h2>
+							<p>Je ne suis pas le tweeter le plus actif au monde, mais quand je trouve un truc sympa je met le lien ici.</p>
+						</a>
+					</li>
+					<li alt="image svg linkedin" class="linkedin">
+						<a href="#">
+							<h2>Linkedin</h2>
+							<p>Ma page Linkedin en bonne et du forme.</p>
+						</a>
+					</li>
+					<li alt="image svg medium" class="mediums">
+						<a href="#">
+							<h2>Medium</h2>
+							<p>Pour trouver mes study case c'est ici. </p>
+						</a>
+					</li>
+					<li alt="image svg codepen" class="codepen">
+						<a href="#">
+							<h2>CodePen</h2>
+							<p>Mes débuts en web (2014-2015) et mon évolution.</p>
+						</a>
+					</li>
+					<li alt="image svg github" class="github">
+						<a href="#">
+							<h2>GitHub</h2>
+							<p>Acceder facillement a tout les fichiers qui composent mon site.</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="footer">
+				<ul class="foot">
+					<li class="twit"><a href="https://twitter.com/setsunArts"></a></li>
+					<li class="link"><a href="https://www.linkedin.com/profile/view?id=427788678&trk=hp-identity-name"></a></li>
+					<li class="medium"><a href="https://medium.com/@julianspiessens/tfa-2014-2015-c8ce5fad2b5"></a></li>
+					<li class="gh"><a href="#"></a></li>
+				</ul>
+
+		</section>
+	
+	</body>
+</html>

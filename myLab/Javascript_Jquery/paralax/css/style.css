@@ -1,0 +1,122 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #000;
+}
+
+#main {}
+
+#nav { position: fixed; z-index: 2; top:0;}
+#nav ul{ list-style: none; }
+#nav li { float: left; margin: 10px;}
+#nav li a{ color: white;  padding: 10px; border: 1px solid white; text-decoration: none;}
+#nav li a:hover,
+#nav li a.active{  background: rgba(255,255,255, .6);}
+
+.section {
+	height: 500px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: table;
+}
+.section h1{
+	font-size: 2em;
+	-webkit-transition:all .5s;
+}
+
+.section.active .backround {
+	opacity: 1;
+}
+.parralax { position: absolute;}
+
+.backround { 
+	width: 100%; 
+	height: 800px; 
+	min-height: 100%;  
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	/*background-attachment: fixed;*/
+	opacity: .5; 
+	-webkit-transition:opacity .5s;
+}
+
+.content { 
+	display: table-cell;
+	vertical-align: middle;
+	position: relative; 
+	padding: 20px;
+}
+
+.content h1{ color: #fff; text-align: center; position: relative; z-index: 1;}
+.content h2{ color: #fff; text-align: center; position: relative;z-index: 1; }
+
+.first {  background-image: url("../img/landscape_0.jpg"); }
+.second { background-image: url("../img/landscape_1.jpg"); }
+.third {  background-image: url("../img/landscape_2.jpg"); }
+.fourth { background-image: url("../img/landscape_4.jpg"); }
+.fifth {  background-image: url("../img/landscape_3.jpg"); }
+
+.content img { 
+	position: absolute;
+	z-index: 0;
+	-webkit-transition:all 0s;
+}
+
+#earth { 
+	right: -100px;  
+	top: 170px; 
+}
+#pacman { 
+	left: -100px;  
+	top: 170px; 
+}
+#ghost1 { 
+	left: -100px;  
+	top: 170px;
+}
+#ghost2 { 
+	right: -100px;  
+	top: 170px;
+}
+#spaceship { 
+	right: -100px;
+	top: 170px;
+}
+#trex { 
+	left: -100px; 
+	bottom: 0;
+}
+
+
+.section.active h1{
+	font-size: 3em;
+}
+
+.section.active #earth { 
+	right: 100px;
+	-webkit-transition:all .5s;
+}
+.section.active #pacman {
+	left: 100px;  
+	-webkit-transition:all .5s;
+}
+.section.active #ghost1 {
+	left: 100px; 
+	-webkit-transition:all .5s;
+}
+.section.active #ghost2 {
+	right: 100px; 
+	-webkit-transition:all .5s;
+	-webkit-transition-delay: .4s;
+}
+.section.active #spaceship { 
+	right: 80%;  
+	-webkit-transition:all 2s;
+	-webkit-transition-delay: .5s;
+}
+.section.active #trex { 
+	left: 100px; 
+	-webkit-transition:all .5s;
+}

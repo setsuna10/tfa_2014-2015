@@ -1,0 +1,16 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-prev {
+	display: none;
+
+}
+.owl-next {
+	display: none;
+}

@@ -1,0 +1,126 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu';
+	font-size: 18px;
+	height: 100%;
+	width: 100%;
+	list-style: none;
+
+}
+
+.home {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	list-style: none;	
+	background-color: transparent;
+	overflow: hidden;
+	margin: auto;
+}
+
+
+.bloc1 {
+	position: fixed;
+	top: 10%;
+	left: 10%;
+
+
+	display: block;
+	background-color: green;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	-ms-transform: translateX(0); /* IE 9 */
+    -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
+    transform: translateX(0);
+
+
+}
+.bloc2 {
+	position: fixed;
+
+	top: 10%;
+	left: 10%;
+
+	display: block;
+	background-color: blue;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+
+	-ms-transform: translateX(-120%); /* IE 9 */
+    -webkit-transform: translateX(-120%); /* Chrome, Safari, Opera */
+    transform: translateX(-120%);
+
+}
+
+.bloc3 {
+	position: fixed;
+
+	top: 10%;
+	left: 10%;
+
+	display: block;
+	background-color: red;
+	width: 80%;
+	height: 80%;
+
+
+	-ms-transform: translateX(-120%); /* IE 9 */
+    -webkit-transform: translateX(-120%); /* Chrome, Safari, Opera */
+    transform: translateX(-120%);
+ 
+}
+.bloc4 {
+	position: fixed;
+
+	top: 10%;
+	left: 10%;
+
+	display: block;
+	background-color: black;
+	width: 80%;
+	height: 80%;
+
+
+	-ms-transform: translateX(-120%); /* IE 9 */
+    -webkit-transform: translateX(-120%); /* Chrome, Safari, Opera */
+    transform: translateX(-120%);
+ 
+}
+.bloc5 {
+	position: fixed;
+
+	top: 10%;
+	left: 10%;
+
+	display: block;
+	background-color: grey;
+	width: 80%;
+	height: 80%;
+
+
+	-ms-transform: translateX(-120%); /* IE 9 */
+    -webkit-transform: translateX(-120%); /* Chrome, Safari, Opera */
+    transform: translateX(-120%);
+}
+
+
+
+.visible {
+	-ms-transform: translateX(0); /* IE 9 */
+    -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
+    transform: translateX(0);
+}
+.cache {
+	-ms-transform: translateX(-120%); /* IE 9 */
+    -webkit-transform: translateX(-120%); /* Chrome, Safari, Opera */
+    transform: translateX(-120%);
+}
+.eject {
+	-ms-transform: translateX(+120%); /* IE 9 */
+    -webkit-transform: translateX(+120%); /* Chrome, Safari, Opera */
+    transform: translateX(+120%);
+}

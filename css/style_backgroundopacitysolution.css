@@ -1,0 +1,182 @@
+/*
+La navigation:
+
+OBJECTIFS: Rendre la nav épurée et fonctionelle.
+
+PRINCIPES: Un torii ou tori-i (鳥居?) est un portail traditionnel japonais. 
+Il est communément érigé à l’entrée d’un sanctuaire shintoïste, afin de séparer l’enceinte sacrée de 
+l’environnement profane. Du fait de sa fonction de séparation symbolique du monde physique et du monde spirituel,
+ chaque torii traversé lors de l’accès à un sanctuaire doit être retraversé dans l’autre sens afin de revenir 
+ dans le monde matériel.
+
+HOW TO: Basant l'ensemble de mon concept de site web sur l'équilibre l'idée de transformer ma nav en porte étais
+pour moi plein de sens. Séparation entre le monde virtuel(mon site) et le monde materiel(l'utilisateur).
+
+BUT: donner envie a l'utilisateur de passer la porte de mon temple(site) pour découvrir les mystères
+qu'il récèle.
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+	position:absolute;
+	top:0; 
+	bottom:0; 
+	right:0; 
+	left:0;
+}
+
+nav {
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+nav ul {
+	display: block;
+	height: 100px;
+}
+
+nav ul li {
+	display: block;
+	height: 80px;
+	width: 80px;
+	float: left;
+	margin: 10px;
+}
+
+nav ul li:hover{
+	background-color: grey;
+}
+nav ul li:first-child {
+	margin-left: 50px;
+}
+
+nav ul li:last-child {
+	margin-right: 50px;
+}
+
+nav ul li a {
+	display: block;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	margin-top: -12px;
+	color: white;
+}
+
+nav ul li a:active {
+	color: red;
+}
+
+nav ul h2 {
+	display:block;
+	height: 100px;
+	float: right;
+	position: relative;
+	margin-left: 50px;
+	margin-right: 50px;
+	top: 10px;
+	font:normal 70px/70px Georgia,"Times New Roman",Times, serif;
+}
+
+.section_main {
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	background: url(../img/intro.jpg);
+	z-index: -2;
+	position: relative;
+}
+
+
+/*https://css-tricks.com/snippets/css/transparent-background-images/
+Solution trouvée a l'adresse suivante. cette solution semble particulière est sujet a controverse
+dans les commentaires mais semble pourtant abordable et efficace. d'ou mon utilisation de la méthode.*/
+
+.content {
+	display: block;
+	width: 30%;
+	height: 50%;
+	color: white;
+	position: relative;
+	padding-top: 15%;
+	left: 50%;
+	margin-left: -15%;
+
+
+
+}
+
+.content h2 {
+	display: block;
+
+	font:normal 60px/60px Georgia,"Times New Roman",Times, serif;
+	margin-bottom: 25px;
+
+}
+
+.content h3 {
+	display: block;
+	width: 70%;
+	font:normal 40px/40px Georgia,"Times New Roman",Times, serif;
+	margin-bottom: 25px;
+
+}
+
+.content p {
+	display: block;
+	width: 70%;
+	text-align: justify;
+	font:normal 20px/20px Georgia,"Times New Roman",Times, serif;
+	margin-bottom: 10px;
+}
+
+.content p:first-of-type{
+	font:italic 20px/20px Georgia,"Times New Roman",Times, serif;
+}
+
+.content p:last-child {
+	font:italic 20px/20px Georgia,"Times New Roman",Times, serif;
+}
+
+.footer {
+	display: block;
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	clear: both;
+}
+
+.foot {
+	display: block;
+	width: 60%;
+	height: 80px;
+	position: relative;
+	top: 15px;
+	left: 50%;
+	margin-left: -30%;
+}
+
+.foot li {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: teal;
+	float: left;
+	position: relative;
+
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.foot li:first-child {
+margin-left: 20%;
+}
+
+.foot li:last-child {
+margin-right: 20%;
+}

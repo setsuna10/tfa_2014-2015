@@ -1,0 +1,106 @@
+body {
+
+	font-family: Helvetica;
+}
+
+#container {
+	padding: 50px 10px 0;
+	max-width: 450px;
+	height: 150px;
+	margin: 0 auto;
+}
+#horloge {
+	margin: 50px auto;
+	height: 150px;
+	width: 150px;
+}
+#heure, #minute, #seconde {
+	position: absolute;
+}
+#minute {
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#heure {
+
+}
+#seconde {
+margin-top: 20px;
+margin-left: 20px;
+}
+
+.overflow {
+	float: left;
+}
+#sec1, #sec2 {
+	height: 90px;
+	width: 90px;
+	border-radius: 180px;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #b5a281;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #b5a281;
+
+}
+#sec1 {
+	margin-left: -55px;
+}
+#overflowsec1, #overflowsec2 {
+	height: 110px;
+	width: 55px;
+	overflow: hidden;
+	position: relative;
+}
+#overflowh2, #overflowh1 {
+	height: 150px;
+	width: 75px;
+	overflow: hidden;
+	position: relative;
+}
+#hour1, #hour2 {
+	height: 130px;
+	width: 130px;
+	border-radius: 260px;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #fac748;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fac748;
+}
+#hour1 {
+	margin-left: -75px;
+}
+#overflowmin1, #overflowmin2 {
+	height: 70px;
+	width: 35px;
+	overflow: hidden;
+	position: relative;
+}
+#min1 {
+	margin-left: -35px;
+}
+#min1, #min2 {
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	border-top: 10px solid transparent;
+	border-left: 10px solid #933e5d;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #933e5d;
+
+}
+
+#sec1, #min1, #h1 {
+	-webkit-transform: rotate(225deg);  /*45*/
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+#sec2, #min2, #h2 {
+	-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+}

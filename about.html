@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>A propos  | Design Web & Multimédia | Spiessens Julian.</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="icon" type="image/png" href="logo.png" />
+		<meta charset="UTF-8" Title="Tfa_Spiessens_Julian" description="Mon travail de fin d'année en Web et Multimedia. Objectif: Site dédié a la recherche d'un stage."/>
+		<link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+		<script src="headsupgrid/jquery-1.6.2.min.js"></script>
+		<script src="headsupgrid/hugrid.js"></script>
+		<script type="text/javascript">
+		    definegrid = function() {
+		        var browserWidth = $(window).width(); 
+		        if (browserWidth >= 1001) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 20;
+		            columnwidth = 4;
+		            gutterwidth = 1;
+		            pagetopmargin = 0;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        } 
+		        if (browserWidth <= 1000) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 48;
+		            gutterwidth = 4;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		        if (browserWidth <= 768) 
+		        {
+		            pageUnits = '%';
+		            colUnits = '%';
+		            pagewidth = 100;
+		            columns = 2;
+		            columnwidth = 49;
+		            gutterwidth = 2;
+		            pagetopmargin = 35;
+		            rowheight = 20;
+		            gridonload = 'off';
+		            makehugrid();
+		        }
+		    }
+		    $(document).ready(function() {
+		        definegrid();
+		        setgridonload();
+		    });    
+
+		    $(window).resize(function() {
+		        definegrid();
+		        setgridonresize();
+		    });
+		</script>
+	</head>
+	<body>
+		<nav >
+			<a href="index.html"><h1>SetsunArts</h1></a>
+			<ul>
+				
+				<li><a href="contact.html"><p>Contact</p></a> </li>
+				<li><a href="about.html" class="actif"><p>A Propos</p></a></li>			
+				<li><a href="lab.html"><p>Labo</p></a></li>
+				<li><a href="index.html"><p>Accueil</p></a></li>
+			</ul>
+		</nav>
+		<section class="section_main_about">
+			<div class="content_about">
+
+				<div id="choix">
+					<input type="radio" id="open" name="gate" value="">
+					<label for="open" class="open"><h3>Open</h3></label>
+
+					<input type="radio" id="close" name="gate" value="">
+					<label for="close" class="close"><h3>Close</h3></label>
+
+						<div id="about_segment1">                   		
+							<div class="citation">
+								<div class="allign">
+									<h3>"Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."</h3>
+									<p>Paul Rand</p>
+								</div>	
+							</div>
+							<div alt="image atypique batiment tordu" class="img_segment1"></div>
+							<div class="texte">
+								<div class="allign">
+									<h3>Atypique </h3>
+									<p>Je suis un individualiste fini, j'aime la solitude et j'apprécie particulièrement le silence. Quand je veut créer ou être créatif j'aime être isolé. Pourtant je donne le meilleur de moi-même en équipe. Motivé par les personnes qui m'entourent je peu avancer en toute confiance en apportant ma pierre a l'édifice collectif et tout ça avec un sourire sincère aux lèvres.</p>
+								</div>	
+							</div>
+						</div>	
+				</div>
+
+				<div id="choix">
+					<input type="radio" id="open1" name="gate1" value="">
+					<label for="open1" class="open1"><h3>Open</h3></label>
+
+					<input type="radio" id="close1" name="gate1" value="">
+					<label for="close1" class="close1"><h3>Close</h3></label>
+
+						<div id="about_segment2">
+							<div class="texte">
+								<div class="allign">
+									<h3>Polyvalent</h3>
+									<p>Je m’intéresse a tout. Ma nature curieuse me pousse a vouloir tout connaître. Mon parcours en est la preuve. J'ai brûle les planches du théâtre, réalisé des cours métrages, plonge dans la littérature de Shakespeare a Tolkien, peint des miniatures, écrit des poèmes et finalement me voila en infographie. Le web et moi on est pareil. On touche a tout design, ergonomie,texte,code... 
+									J'ai enfin trouvé une branche qui ne cesse d’attiser ma curiosité.</p>
+								</div>
+							</div>
+							<div alt="image ployvalent Pont image d'un pas" class="img_segment2"></div>
+							<div class="citation">
+								<div class="allign">
+									<h3>"A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools."</h3>
+									<p>Douglas Adams</p>
+								</div>	
+							</div>
+						</div>
+				</div>
+
+				<div id="choix">
+					<input type="radio" id="open2" name="piece" value="">
+					<label for="open2" class="open2"><h3>Open</h3></label>
+
+					<input type="radio" id="close2" name="piece" value="">
+					<label for="close2" class="close2"><h3>Close</h3></label>    
+
+						<div id="about_segment3">
+							<div class="citation">
+								<div class="allign">
+									<h3>"Does it better" will always beat "did it first."</h3>
+									<p>Aaron Levie</p>
+								</div>	
+							</div>	
+							<div alt="image motivé chemin" class="img_segment3"></div>
+							<div class="texte">
+								<div class="allign">
+									<h3>Motivé </h3>
+									<p>J'aime me lancer a corps perdu dans mes projets. La pression ne me fait pas peur. Tant que un projet est en cours je ne me laisse pas le temps de paniquer ou de laisser le stress contrôler le meilleur de moi-même. Critique avec moi-même mais surtout sans prétention. Je pense avoir encore des choses a apprendre et suis tout aussi motivé a les découvrir.</p>
+								</div>
+							</div>	
+						</div>	
+				</div>
+
+				<div id="choix">
+					<input type="radio" id="open3" name="lost" value="">
+					<label for="open3" class="open3"><h3>Open</h3></label>
+
+					<input type="radio" id="close3" name="lost" value="">
+					<label for="close3" class="close3"><h3>Close</h3></label>
+
+						<div id="about_segment4">
+							<div class="texte">
+								<div class="allign">
+									<h3>Positif </h3>
+									<p>La vie commence et s'achève. 
+									Elle est trop courte pour ne pas en profiter. J'aime sourire car cela me fait du bien. Je vois toujours le verre a moitié plein plutôt que à moitié vide. </p>
+								</div>
+							</div>
+							<div alt="image positif verre d'au débordant" class="img_segment4"></div>
+							<div class="citation">
+								<div class="allign">
+									<h3>"It's art if it can't be explaine. It's fashion if no one asks for an explantaion. It's design if it doesn't need explaination."</h3>
+									<p>Wouter Stokkel</p>
+								</div>	
+							</div>	
+						</div>
+				</div>				
+				
+				<div id="choix">
+					<input type="radio" id="open4" name="love" value="">
+					<label for="open4" class="open4"><h3>Open</h3></label> 
+
+					<input type="radio" id="close4" name="love" value="">
+					<label for="close4" class="close4"><h3>Close</h3></label>  
+
+						<div id="about_segment5">
+							<div class="citation">
+								<div class="allign">
+									<h3>"It has becom appallingly obvious that our technology has exceeded our humanity."</h3>
+									<p>Albert Einstein</p>
+								</div>	
+							</div>	
+							<div alt="image Setsuna avatar" class="img_segment5"></div>
+							<div class="texte">
+								<div class="allign">
+									<h3>Setsüna </h3>
+									<p>C'est moi, mon alias sur internet. Cela veut dire éphémère en Japonais. Je pense que ca me convient bien. Notre vie est éphémère, notre travail est éphémère mais la trace que nous laissons est éternelle. J'ai envie de participer activement a la trace que je laisserai derrière moi.</p>
+								</div>
+							</div>
+						</div>	
+				</div>	
+
+				<div alt=" background image shinto" class="end">
+					<h3>Pourquoi le web?</h3>
+					<p>Car internet fait partie de nos vies, une nouvelle étape dans la communication mondiale. Le web c'est l'accès a l'information. On peut découvrir une culture a des milliers de kilomètres de nous, l'on peut découvrir, partager, comprendre. Internet est pour moi le premier pas vers une humanité réellement unie, capable de se comprendre. J'aime participer, j'ai donc décidé de passer de spectateur a acteur dans cet univers que représente internet.</p>
+					<p>Et me voila. Ux-webdésigner en formation. Localisé a Bruxelles je partage mon temps
+					entre internet, ma femme et mes amis.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+				<ul class="foot">
+					<li class="twit"><a href="https://twitter.com/setsunArts"></a></li>
+					<li class="link"><a href="https://www.linkedin.com/profile/view?id=427788678&trk=hp-identity-name"></a></li>
+					<li class="medium"><a href="https://medium.com/@julianspiessens/tfa-2014-2015-c8ce5fad2b5"></a></li>
+					<li class="gh"><a href="#"></a></li>
+				</ul>
+
+		</section>
+	
+	
+	</body>
+</html>
