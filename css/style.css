@@ -1,21 +1,3 @@
-/*
-La navigation:
-
-OBJECTIFS: Rendre la nav épurée et fonctionelle.
-
-PRINCIPES: Un torii ou tori-i (鳥居?) est un portail traditionnel japonais. 
-Il est communément érigé à l’entrée d’un sanctuaire shintoïste, afin de séparer l’enceinte sacrée de 
-l’environnement profane. Du fait de sa fonction de séparation symbolique du monde physique et du monde spirituel,
- chaque torii traversé lors de l’accès à un sanctuaire doit être retraversé dans l’autre sens afin de revenir 
- dans le monde matériel.
-
-HOW TO: Basant l'ensemble de mon concept de site web sur l'équi#libre l'idée de transformer ma nav en porte étais
-pour moi plein de sens. Séparation entre le monde virtuel(mon site) et le monde materiel(l'utilisateur).
-
-BUT: donner envie a l'utilisateur de passer la porte de mon temple(site) pour découvrir les mystères
-qu'il récèle.
-*/
-
 @font-face {
     font-family: 'droid_serifregular';
     src: url('../font/droid-serif-fontfacekit/web fonts/droidserif_regular_macroman/DroidSerif-Regular-webfont.eot');
@@ -38,6 +20,8 @@ qu'il récèle.
     font-style: normal;
 
 }
+
+/* Une taile de base pour tout les elements*/
 a {
 	font:normal 18px/25px noto_sansregular Georgia,"Times New Roman",Times, sans-serif;
 }
@@ -55,24 +39,7 @@ h2 {
 h3 {
 	font:normal 36px/36px droid_serifregular, Georgia,"Times New Roman",Times, serif;
 }
-/*
 
-Police titres: Droid Serif;
-police p = taille 18
-titres ratio 16*1.5
-
-noto sans police snas 
-
-media queries
-titres dans a propos a agandir
-
-A PROPOS/
-FOND A GAUCHE COULEUR L _A PLus clair de la palette.
-texte couleur la plus foncée 
-
-de lautre coté l'inverse.
-
-*/
 html {
 	display: block;
 	height: 100%;
@@ -81,7 +48,10 @@ html {
 body {
 	display: block;
 	height: 100%;
+	line-height: 1.5;
 }
+
+/*Navigation*/
 
 nav {
 	display: block;
@@ -106,14 +76,12 @@ nav ul li  {
 }
 
 nav ul li a:hover,.actif{
-
 	border-bottom: 1px solid white;	
 }
+
 nav ul li:first-child {
 	margin-right: 10px;	
 }
-
-
 
 nav ul li a {
 	display: block;
@@ -159,6 +127,7 @@ nav h1 a:hover {
 	background-color: black;
 	top: 0;
 	left: 0;
+	margin-top: 100px;
 }
 .animate {
 	stroke-dasharray: 5000;
@@ -174,7 +143,7 @@ nav h1 a:hover {
     
   }
 }
-
+/*Texte page d'accueil*/
 .content {
 	display: block;
 	width: 560px;
@@ -223,16 +192,8 @@ nav h1 a:hover {
 
 }
 
-.html_css h3, .java h3, .other h3 {
-	display: block;
-	height: 40px;
-	padding-bottom: 4px;
-	margin-bottom: 30px;
-	margin-top: 25px;
-	color: white;
-	border-bottom: solid white 1px;
+/*Title de la page et Title des chapitres*/
 
-}
 .intro  {
 	display: block;
 	margin-left: 10%;
@@ -242,6 +203,29 @@ nav h1 a:hover {
 	float: left;
 	position: relative;
 }
+
+.intro h1 {
+	display: block;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	top: 25%;
+}
+.intro h2 {
+	display: block;
+	margin-bottom: 25px;
+	float: left;
+}
+.html_css h3, .java h3, .other h3 {
+	display: block;
+	height: 40px;
+	padding-bottom: 4px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+	color: white;
+	border-bottom: solid white 1px;
+}
+
+/*Elements pour alligner chaque bloc ensemble*/
 
 .java, .html_css, .other {
 	display: block;
@@ -273,25 +257,6 @@ nav h1 a:hover {
 	-ms-transition:opacity .2s ease;
 	transition:opacity .2s ease;
 }
-
-
-.intro h1 {
-	display: block;
-
-
-	margin-bottom: 25px;
-	margin-top: 25px;
-	top: 25%;
-}
-.intro h2 {
-	display: block;
-
-
-	margin-bottom: 25px;
-	float: left;
-
-}
-
 .java ul li a {
 	display: block;
 	height: 100%;
@@ -325,6 +290,7 @@ nav h1 a:hover {
 	margin-top: 20%;
 	margin-left: 5%;
 }
+
 .html_css ul li a {
 	display: block;
 	height: 100%;
@@ -349,6 +315,7 @@ nav h1 a:hover {
 	margin-top: 20%;
 	margin-left: 5%;
 }
+
 .html_css ul li a h2:nth-child(3) {
 	display: block;
 	width: 80%;
@@ -357,6 +324,7 @@ nav h1 a:hover {
 	margin-top: 20%;
 	margin-left: 5%;
 }
+
 .other ul li a {
 	display: block;
 	height: 100%;
@@ -374,6 +342,7 @@ nav h1 a:hover {
 	margin-top: 10%;
 	margin-left: 5%;
 }
+
 .other ul li a h2:nth-child(2) {
 	display: block;
 	width: 80%;
@@ -382,6 +351,7 @@ nav h1 a:hover {
 	margin-top: 20%;
 	margin-left: 5%;
 }
+
 .other ul li a h2:nth-child(3) {
 	display: block;
 	width: 80%;
@@ -390,12 +360,12 @@ nav h1 a:hover {
 	margin-top: 20%;
 	margin-left: 5%;
 }
+
 .section_main_lab ul li:hover {
 	opacity: 0.5;
-
 }
 
-/* Main About */
+/* Main A Propos */
 
 .section_main_about {
 	height: 600%;
@@ -404,18 +374,30 @@ nav h1 a:hover {
 	overflow: hidden;
 	background-color: #4f5e69;
 }
+
+/* Agrandir la page de 50% puis la couper en 3 pour avoir toujour un élément de 50% qui dépasse.*/
+
 .content_about:nth-child(odd) {
 	display: block;
 	width: 150%;
 	height: 16.66666666667%;
 	float: left;
 }
+
 .content_about:nth-child(even) {
 	display: block;
 	width: 150%;
 	height: 16.66666666667%;
 	float: right;
 }
+
+/*agancement des éléments pour obtenir un efet croisé*/
+#choix {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
 #about_segment1, #about_segment3, #about_segment5 {
 	display: block;
 	height: 100%;
@@ -428,6 +410,7 @@ nav h1 a:hover {
   -o-transition :       all 1s ease;
   transition :          all 1s ease;
 }
+
 #about_segment2, #about_segment4 {
 	display: block;
 	height: 100%;
@@ -440,6 +423,18 @@ nav h1 a:hover {
   -o-transition :       all 1s ease;
   transition :          all 1s ease;
 }
+
+/*Ajustement du contenu de chaque bloc*/
+
+.allign {
+	display: block;
+	width: 60%;
+	height: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 30%;
+}
+
 .citation{
 	display: block;
 	height: 100%;
@@ -449,6 +444,11 @@ nav h1 a:hover {
 	float: left;
 	margin-left: -1px;
 }
+.citation h3 {
+	display: block;
+	font:italic 30px/30px droid_serif regular, Georgia,"Times New Roman",Times, serif;
+	margin-bottom: 20px;
+}
 .texte {
 	display: block;
 	height: 100%;
@@ -457,47 +457,92 @@ nav h1 a:hover {
 	color: #b9dbf3;
 	float: left;
 }
+
+.texte h3{
+	display: block;
+	font:normal 100px/100px droid_serifregular, Georgia,"Times New Roman",Times, serif;
+}
+
+.texte p{
+	display: block;
+	margin-top: 38px;
+}
+
+.end {
+	display: block;
+	height: 100%;
+	min-height: 750px;
+	width: 66.7%;
+	float: left;
+	position: relative;
+	z-index: 1;
+	background: url(../img/shinto.png) no-repeat;
+	background-size: 100%;
+	position: 0 50%;
+	margin-bottom: -100px;
+}
+
+.end h3{
+	display: block;
+	color: white;
+	width: 50%; 
+	margin-left:25%;
+	font:normal 100px/100px droid_serifregular, Georgia,"Times New Roman",Times, serif;
+	position: relative;
+	top: 150px;
+	margin-bottom: 50px;
+}
+
+.end p{
+	display: block;
+	color: white;
+	width: 50%; 
+	max-width: 690px;
+	margin-left:25%;
+	position: relative;
+	top: 150px;
+}
+
 .img_segment1 {
 	display: block;
 	height: 100%;
 	width: 33.333333333333333%;
 	background: url(../img/atypique.png) no-repeat;
 	background-position: center;
-
 	float: left;
 	margin-left: -1px;
-
 }
+
 .img_segment2 {
 	display: block;
 	height: 100%;
 	width: 33.333333333333333%;
 	background: url(../img/polyvalent.png) no-repeat;
 	background-position: center;
-
 	float: left;
 	margin-left: 1px;
 }
+
 .img_segment3 {
 	display: block;
 	height: 100%;
 	width: 33.333333333333333%;
 	background: url(../img/motive.png) no-repeat;
 	background-position: center;
-
 	float: left;
 	margin-left: -1px;
 }
+
 .img_segment4 {
 	display: block;
 	height: 100%;
 	width: 33.333333333333333%;
 	background: url(../img/positif.png) no-repeat;
 	background-position: center;
-
 	float: left;
 	margin-left: 1px;
 }
+
 .img_segment5 {
 	display: block;
 	height: 100%;
@@ -508,19 +553,21 @@ nav h1 a:hover {
 	margin-left: -1px;
 }
 
-#choix {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
+/*création des checkbox pour avoir un effet onclick*/ 
+/* Plusieurs options étaient possible soit un bouton soit placer la check-box par desus l'image.
+La seconde option c'st avérer plus esthétique.
+L'animation rend le changement moins brutal et voir la premiere checkbox s'en aller en perdant son état hover donne a l'ensemble
+une certaine fluidité*/
 
 #choix input, input[type="checkbox"] {
   display: none;
 }
+
 label h3 {
 	margin-top: 60px;
 }
-	.open, .open2, .open4{
+
+.open, .open2, .open4{
 	  height: 100%;
 	  cursor: pointer;
 	  display: block;
@@ -532,19 +579,18 @@ label h3 {
 	  z-index: 10;
 	  position: absolute;
 	  left: 0;
-	  opacity: 0.2;
-	  -webkit-transition :  all 1s ease;
-	  -moz-transition :     all 1s ease;
-	  -ms-transition :     all 1s ease;
-	  -o-transition :       all 1s ease;
-	  transition :          all 1s ease;
+	  opacity: 0;
+	  -webkit-transition : all 1s ease;
+	  -moz-transition : all 1s ease;
+	  -ms-transition : all 1s ease;
+	  -o-transition : all 1s ease;
+	  transition : all 1s ease;
+}
 
-	}
-	.open1, .open3 {
+.open1, .open3 {
 	  height: 100%;
 	  cursor: pointer;
 	  display: block;
-
 	  width: 50%;
 	  background: #0f0e0e;
 	  color: white;
@@ -553,16 +599,15 @@ label h3 {
 	  z-index: 10;
 	  position: absolute;
 	  right: 0;
-	  opacity: 0.2;
-	  -webkit-transition :  all 1s ease;
-	  -moz-transition :     all 1s ease;
-	  -ms-transition :     all 1s ease;
-	  -o-transition :       all 1s ease;
-	  transition :          all 1s ease;
+	  opacity: 0;
+	  -webkit-transition : all 1s ease;
+	  -moz-transition : all 1s ease;
+	  -ms-transition : all 1s ease;
+	  -o-transition : all 1s ease;
+	  transition : all 1s ease;
+}
 
-	}
-
-	.close, .close2, .close4{
+.close, .close2, .close4{
 	  height: 100%;
 	  cursor: pointer;
 	  display: block;
@@ -573,15 +618,16 @@ label h3 {
 	  float: left;
 	  z-index: 10;
 	  position: absolute;
-	  opacity: 0.2;
+	  opacity: 0;
 	  left: -100%;
-	  -webkit-transition :  all 1s ease;
-	  -moz-transition :     all 1s ease;
-	  -ms-transition :     all 1s ease;
-	  -o-transition :       all 1s ease;
-	  transition :          all 1s ease;
-	}
-	.close1,.close3{
+	  -webkit-transition : all 1s ease;
+	  -moz-transition : all 1s ease;
+	  -ms-transition : all 1s ease;
+	  -o-transition : all 1s ease;
+	  transition : all 1s ease;
+}
+
+.close1,.close3{
 	  height: 100%;
 	  cursor: pointer;
 	  display: block;
@@ -593,28 +639,30 @@ label h3 {
 	  z-index: 10;
 	  position: absolute;
 	  right: 125%;
-	  opacity: 0.2;
-	  -webkit-transition :  all 1s ease;
-	  -moz-transition :     all 1s ease;
-	  -ms-transition :     all 1s ease;
-	  -o-transition :       all 1s ease;
-	  transition :          all 1s ease;
-	}
-	#open:checked ~ .open, #open2:checked ~ .open2, #open4:checked ~ .open4{
-		left: 50%;
-		display: none;
-	}
-	#open1:checked ~ .open1, #open3:checked ~ .open3 {
-		right: 50%;
-		display: none;
-	}
+	  opacity: 0;
+	  -webkit-transition : all 1s ease;
+	  -moz-transition : all 1s ease;
+	  -ms-transition : all 1s ease;
+	  -o-transition : all 1s ease;
+	  transition : all 1s ease;
+}
+
+/*deplace quand l'image a été check*/
+
+
+#open:checked ~ .open, #open2:checked ~ .open2, #open4:checked ~ .open4{
+	left: 50%;
+}
+
+#open1:checked ~ .open1, #open3:checked ~ .open3 {
+	right: 50%;
+}
 
 .open1:hover,.open2:hover,.open3:hover,.open4:hover,.open:hover, .close1:hover,.close2:hover, .close3:hover, .close4:hover, .close:hover {
   color: white;
   background: black;
   opacity: 0.5;
 }
-
 
 #open:checked ~ #about_segment1, #open2:checked ~ #about_segment3, #open4:checked ~ #about_segment5{
 	left: 0%;
@@ -629,107 +677,16 @@ label h3 {
 }
  #open1:checked ~ .close1, #open3:checked ~ .close3{
  	right: 50%;
- }
-
- .svg {
-	display: block;
-	height: 100%;
-	width: 100%;
-	position: relative;
-	top: 0;
-	left: 0;
-}
-.animate {
-	stroke-dasharray: 5000;
-	stroke-dashoffset: 5000;
-	fill:none;
-  	animation: dash 5s linear forwards;
-
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-    
-  }
-}
-
-.texte p{
-	display: block;
-	margin-top: 38px;
-
-}
-
-.texte h3{
-	display: block;
-	font:normal 100px/100px droid_serifregular, Georgia,"Times New Roman",Times, serif;
-
-}
-.allign {
-	display: block;
-	width: 60%;
-	height: 50%;
-	margin: 0 auto;
-	position: relative;
-	top: 30%;
-}
-.citation h3 {
-
-	display: block;
-	font:italic 30px/30px droid_serif regular, Georgia,"Times New Roman",Times, serif;
-	margin-bottom: 20px;
-}
-
-.end {
-	display: block;
-	height: 100%;
-	min-height: 750px;
-	width: 66.7%;
-	float: left;
-	position: relative;
-	z-index: 1;
-	background: url(../img/shinto.png) no-repeat;
-	
-	position: 0 50%;
-	margin-bottom: -100px;
-}
-.end p{
-	display: block;
-	color: white;
-	width: 50%; 
-	max-width: 690px;
-	margin-left:25%;
-	position: relative;
-	top: 150px;
-}
-
-.end h3{
-	display: block;
-	color: white;
-	width: 50%; 
-	margin-left:25%;
-	font:normal 100px/100px droid_serifregular, Georgia,"Times New Roman",Times, serif;
-	position: relative;
-	top: 150px;
-	margin-bottom: 50px;
-
-}
 /*CONTACT*/
+
 .section_contact {
 	display: block;
 	background-color: #4f5e69;
 	clear: both;
-
 }
 
-.sociaux {
-	display: block;
-	position: relative;
-	float: left;
-	width: 100%;
-	background-color: #4f5e69;
-
-}
 .title {
 	display: block;
 	color: white;
@@ -737,110 +694,23 @@ label h3 {
 	margin: auto;
 	width: 80%;
 	border-bottom: solid white 1px;
-}
-.title h1{
-
-
+}.title h1{
 	margin-top: 20px;
 }
+
 .title h2 {
 	margin-bottom: 20px;
 }
-.sociaux ul {
-	display: block;
-	top: 10%;
-	width: 80%;
-	margin: 0 auto;
-}
-.sociaux ul li {
-	display: block;
-	height: 550px;
-	width: 250px;
-	margin-top: 25px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	background-color: #87a0b2;
-	float: left;
-	border: 5px solid rgb(53, 61, 68);
-	-webkit-transition: opacity .2s ease;
-	-moz-transition:opacity .2s ease;
-	-o-transition:opacity .2s ease;
-	-ms-transition:opacity .2s ease;
-	transition:opacity .2s ease;
-	
-}
-.sociaux ul li:hover{
-	opacity: 0.5;
-}
-.twiter a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #87a0b2;
-	background: url(../img/twit.svg) no-repeat;	
-	float: left;
-	color: white;
-	text-align: left;
-}
-.linkedin a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #87a0b2;
-	background: url(../img/link.svg) no-repeat;	
-	float:left;	
-	color: white;
-	text-align: left;
-}
-.mediums a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #87a0b2;
-	background: url(../img/medium.svg) no-repeat;	
-	float: left;
-	color: white;
-	text-align: left;
-}
-.codepen a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #87a0b2;
-	background: url(../img/cp.svg) no-repeat;	
-	float: left;
-	color: white;
-	text-align: left;
-}
-.github a {
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #87a0b2;
-	background: url(../img/octo.svg) no-repeat;	
-	float: left;
-	color: white;
-	text-align: left;
-}
-.sociaux ul li a h2 {
-	position: relative;
-	top: 50%;
-	left: 5%;
-}
-.sociaux ul li a p {
-	position: relative;
-	top: 50%;
-	left: 5%;
-	width: 80%;
-}
+
 .formulaire {
 	display: block;
 	position: relative;
 	width: 100%;
 	background-color: #4f5e69;
-
 	float: left;
 }
+
+/*formulaire*/
 
 #feedback-page{
 	text-align:center;
@@ -883,12 +753,10 @@ label h3 {
 
 .feedback-input:focus{
 	background: #fbfbfb;
-
 	border: 3px solid rgb(53, 61, 68);
   	padding: 13px 13px 13px 54px;
 }
 
-/* Icons ---------------------------------- */
 #name{
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -896,7 +764,6 @@ label h3 {
 }
 
 #email{
-	
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -904,7 +771,6 @@ label h3 {
 
 
 #comment{
-
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -923,8 +789,6 @@ input:focus, textarea:focus {
 }
 
 #button{
-	
-
 	float:left;
 	width: 100%;
 	border: white solid 4px;
@@ -948,7 +812,7 @@ input:focus, textarea:focus {
 .submit:hover {
 	color: #3498db;
 }
-	
+/*gestion des transitions*/
 .ease {
 	width: 0px;
 	height: 70px;
@@ -964,9 +828,12 @@ input:focus, textarea:focus {
   width:100%;
   background-color:white;
 }
+
 .tags p {
 	color: white;
 }
+
+/*Media queries du formulaire Je l'ai laise la dua  son coté spécifique*/
 
 @media only screen and (max-width: 580px) {
 	#form-div{
@@ -978,6 +845,111 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
+
+.sociaux {
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: #4f5e69;
+}
+
+.sociaux ul {
+	display: block;
+	top: 10%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.sociaux ul li {
+	display: block;
+	height: 550px;
+	width: 250px;
+	margin-top: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	background-color: #87a0b2;
+	float: left;
+	border: 5px solid rgb(53, 61, 68);
+	-webkit-transition: opacity .2s ease;
+	-moz-transition:opacity .2s ease;
+	-o-transition:opacity .2s ease;
+	-ms-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+}
+
+.sociaux ul li:hover{
+	opacity: 0.5;
+}
+
+.sociaux ul li a h2 {
+	position: relative;
+	top: 50%;
+	left: 5%;
+}
+
+.sociaux ul li a p {
+	position: relative;
+	top: 50%;
+	left: 5%;
+	width: 80%;
+}
+.twiter a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #87a0b2;
+	background: url(../img/twit.svg) no-repeat;	
+	float: left;
+	color: white;
+	text-align: left;
+}
+
+.linkedin a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #87a0b2;
+	background: url(../img/link.svg) no-repeat;	
+	float:left;	
+	color: white;
+	text-align: left;
+}
+
+.mediums a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #87a0b2;
+	background: url(../img/medium.svg) no-repeat;	
+	float: left;
+	color: white;
+	text-align: left;
+}
+
+.codepen a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #87a0b2;
+	background: url(../img/cp.svg) no-repeat;	
+	float: left;
+	color: white;
+	text-align: left;
+}
+
+.github a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #87a0b2;
+	background: url(../img/octo.svg) no-repeat;	
+	float: left;
+	color: white;
+	text-align: left;
+}
+
+
 /*FOOTER*/
 
 .footer {
@@ -1009,24 +981,16 @@ input:focus, textarea:focus {
 	background: url(../img/logo.svg)0 0 no-repeat transparent;
 }
 
-
 .footer ul li {
 	margin-left: 40px;
 }
 .footer ul li.twit a {
   	background-position: 0 0px;
-    -webkit-transition-property: background-position;
-       -moz-transition-property: background-position;
-         -o-transition-property: background-position;
-            transition-property: background-position;
-    -webkit-transition-duration: .2s;
-       -moz-transition-duration: .2s;
-         -o-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition:background-position .2s ease;
+	-o-transition:background-position .2s ease;
+	-ms-transition:background-position .2s ease;
+	transition:background-position .2s ease;
 }
 .footer ul li.twit a:hover {
 
@@ -1036,18 +1000,11 @@ input:focus, textarea:focus {
 
 .footer ul li.link a {
 	background-position: -90px 0;
-    -webkit-transition-property: background-position;
-       -moz-transition-property: background-position;
-         -o-transition-property: background-position;
-            transition-property: background-position;
-    -webkit-transition-duration: .2s;
-       -moz-transition-duration: .2s;
-         -o-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition:background-position .2s ease;
+	-o-transition:background-position .2s ease;
+	-ms-transition:background-position .2s ease;
+	transition:background-position .2s ease;
 }
 .footer ul li.link a:hover {
 	background-position: -90px -50px;
@@ -1056,64 +1013,132 @@ input:focus, textarea:focus {
 .footer ul li.medium a {
 
 	background-position: -140px 0;
-    -webkit-transition-property: background-position;
-       -moz-transition-property: background-position;
-         -o-transition-property: background-position;
-            transition-property: background-position;
-    -webkit-transition-duration: .2s;
-       -moz-transition-duration: .2s;
-         -o-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition:background-position .2s ease;
+	-o-transition:background-position .2s ease;
+	-ms-transition:background-position .2s ease;
+	transition:background-position .2s ease;
 }
 .footer ul li.medium a:hover {
 
 	background-position: -140px -50px;
 }
-.footer ul li.cp a {
 
-	background-position: -180px 0;
-    -webkit-transition-property: background-position;
-       -moz-transition-property: background-position;
-         -o-transition-property: background-position;
-            transition-property: background-position;
-    -webkit-transition-duration: .2s;
-       -moz-transition-duration: .2s;
-         -o-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
-}
-.footer ul li.cp a:hover {
-
-	background-position: -180px -50px;
-}
 .footer ul li.gh a {
 
 	background-position: -230px 0;
-    -webkit-transition-property: background-position;
-       -moz-transition-property: background-position;
-         -o-transition-property: background-position;
-            transition-property: background-position;
-    -webkit-transition-duration: .2s;
-       -moz-transition-duration: .2s;
-         -o-transition-duration: .2s;
-            transition-duration: .2s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
+	-webkit-transition: background-position .2s ease;
+	-moz-transition:background-position .2s ease;
+	-o-transition:background-position .2s ease;
+	-ms-transition:background-position .2s ease;
+	transition:background-position .2s ease;
 }
 .footer ul li.gh a:hover {
-
 	background-position: -230px -50px;
 }
 
+/*Page 404*/
+
+.erreur {
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: white;
+	background-color: #4f5e69; 
+	clear: both;
+}
+.erreur h1 {
+	display: block;
+	width: 80%;
+	margin: 50px 10%;
+	float: left;
+}
+.erreur h2 {
+	display: block;
+	width: 800px;
+	margin-left: 10%;
+	float: left;
+}
+.erreur a h2 {
+	display: block;
+	color: white;
+	float: left;
+}
+.erreur a:hover h2 {
+	display: block;
+	color: white;
+	float: left;
+	opacity: 0.5;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition:opacity .2s ease;
+	-o-transition:opacity .2s ease;
+	-ms-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+}
+.rond {
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background-color: red;
+	float: left;
+}
+
+/*Credits*/
+
+.credits {
+	display: block;
+	width: 100%;
+	color: #b9dbf3;
+	background-color: #4f5e69; 
+	clear: both;
+}
+.credits h1 {
+	display: block;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 50px;
+}
+.credits h2 {
+	display: block;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.credits h3 {
+	display: block;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+.credits a {
+	color: white;
+}
+.credits h3:last-child {
+	display: block;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.cred {
+	display: block;
+	position: relative;
+	top: 50%;
+	margin-top: -12px;
+	color: white;
+	float: right;
+	margin-right: 1%;
+}
+.cred:hover {
+	opacity: 0.5;
+	-webkit-transition: opacity .2s ease;
+	-moz-transition:opacity .2s ease;
+	-o-transition:opacity .2s ease;
+	-ms-transition:opacity .2s ease;
+	transition:opacity .2s ease;
+}
+/*Media queries*/
 
 @media screen and (max-width: 1340px) {
 	.content {
@@ -1126,7 +1151,10 @@ input:focus, textarea:focus {
 		left: 40%;
 	}
 }
+
+/*alignement dans a propos baise de la taille des titres pour correspondre au format.*/ 
 @media screen and (max-width: 1200px) {
+
 	.allign {
 		display: block;
 		width: 80%;
@@ -1161,6 +1189,7 @@ input:focus, textarea:focus {
 
 	}
 }
+/*taille fatidique pour ma nav J'ai double ca hauteur et centré les elements. */
 
 @media screen and (max-width: 900px) {
 
@@ -1201,7 +1230,9 @@ input:focus, textarea:focus {
 	nav ul li:nth-child(1) {
 		margin-right: 0px;
 	}
-
+	.svg {
+		margin-top: 200px;
+	}
 	.content {
 	display: block;
 	width: 560px;
@@ -1212,6 +1243,12 @@ input:focus, textarea:focus {
 	left: 50%;
 	margin-left: -280px;
 	}
+
+/*Modification sur les check-box du a l'aspect sans hover de la tablette et du smartphone il ma semble important de faire 
+apparaitre la checkbox.
+elle est donc visible avec une petite opacite.
+Pour eviter la superposition la checkbox nomée open passe en display none quand check*/
+
 	.open, .open2, .open4{
 	  height: 100%;
 	  cursor: pointer;
@@ -1321,7 +1358,11 @@ input:focus, textarea:focus {
 		top: 5%;
 	}
 }
+
+/*Baisse générale de la taille des titres;*/
+
 @media screen and (max-width: 700px) {
+
 		h1 {
 			font:normal 60px/60px droid_serifregular, Georgia,"Times New Roman",Times, serif;
 		}
@@ -1332,6 +1373,7 @@ input:focus, textarea:focus {
 		h3 {
 			font:normal 30px/30px droid_serifregular, Georgia,"Times New Roman",Times, serif;
 		}
+
 		.section_main {
 			min-height: 600px;
 		}
@@ -1414,15 +1456,15 @@ input:focus, textarea:focus {
 	}
 
 }
+
 @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) { 
 /*Your code for high res screens here */ 
   		.img_segment1 {
 		display: block;
 		height: 100%;
 		width: 33.333333333333333%;
-		background: url(../img/atypique@2x.png) no-repeat;
+		background: url(../img/atypique700.png) no-repeat;
 		background-position: center;
-
 		float: left;
 		margin-left: -1px;
 
@@ -1431,9 +1473,8 @@ input:focus, textarea:focus {
 		display: block;
 		height: 100%;
 		width: 33.333333333333333%;
-		background: url(../img/polyvalent@2x.png) no-repeat;
+		background: url(../img/polyvalent700.png) no-repeat;
 		background-position: center;
-
 		float: left;
 		margin-left: 1px;
 	}
@@ -1441,9 +1482,8 @@ input:focus, textarea:focus {
 		display: block;
 		height: 100%;
 		width: 33.333333333333333%;
-		background: url(../img/motive@2x.png) no-repeat;
+		background: url(../img/motive700.png) no-repeat;
 		background-position: center;
-
 		float: left;
 		margin-left: -1px;
 	}
@@ -1451,9 +1491,8 @@ input:focus, textarea:focus {
 		display: block;
 		height: 100%;
 		width: 33.333333333333333%;
-		background: url(../img/positif@2x.png) no-repeat;
+		background: url(../img/positif700.png) no-repeat;
 		background-position: center;
-
 		float: left;
 		margin-left: 1px;
 	}
@@ -1461,12 +1500,12 @@ input:focus, textarea:focus {
 		display: block;
 		height: 100%;
 		width: 33.333333333333333%;
-		background: url(../img/setsuna@2x.png)no-repeat;
+		background: url(../img/setsuna700.png)no-repeat;
 		background-position: 50% 0;
 		float: left;
 		margin-left: -1px;
 	}
-.end {
-	background: url(../img/shinto@2x.png) no-repeat;
-}
+	.end {
+		background: url(../img/shinto.png) no-repeat;
+	}
 }

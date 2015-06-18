@@ -1,6 +1,6 @@
  $(document).ready(function(){      
 
-            var image = 'http://setunarts.com/TFA/myLab/Javascript_Jquery/Speed_calculator/speed.jpg';
+            var image = 'http://setunarts.com/tfa/myLab/Javascript_Jquery/Speed_calculator/speed.jpg';
             var size = 2979013;
             var time1 = 0;
             var time2 = 0;

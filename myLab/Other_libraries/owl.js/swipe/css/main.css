@@ -1,6 +1,11 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+body {
+	background-color: #4f5e69;
+}
+
 #owl-demo .item img {
     display: block;
     width: 100%;
@@ -13,4 +18,10 @@
 }
 .owl-next {
 	display: none;
+}
+.bloc {
+	height: 300px;
+	width: 150px;
+	display: block;
+	background-color: #b9dbf3;
 }
